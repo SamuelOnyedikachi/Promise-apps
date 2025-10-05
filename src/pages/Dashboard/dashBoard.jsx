@@ -1,5 +1,5 @@
 import React from 'react';
-import FirstImg from '../../assets/firstimg.png';
+import First from '../../assets/firstImg.png';
 import SecondImg from '../../assets/image 4.png';
 import { useNavigate } from 'react-router-dom';
 import Vector from '../../assets/Vector.png';
@@ -44,7 +44,7 @@ const Dashboard = () => {
             <div className="border border-[#daa81ff3] shadow-[inset_0_0_0_1000px_rgba(0,0,0,0.4)] rounded-[20px] md:w-[320px] md:h-[335px] "></div>
             <div className="absolute top-[15.8%] right-[8.3%]">
               <img
-                src={FirstImg}
+                src={First}
                 alt="welcome"
                 className="w-[100%] md:w-[60%] lg:w-[100%]  object-contain"
               />

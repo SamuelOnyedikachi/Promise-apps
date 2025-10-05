@@ -1,5 +1,5 @@
 {
-  "name": "promise-app",
+  "name": "promise-apps",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  
   "dependencies": {
     "@tailwindcss/vite": "^4.1.13",
     "react": "^19.1.1",
@@ -30,4 +31,5 @@
     "tailwindcss": "^4.1.13",
     "vite": "^7.1.7"
   }
+  
 }
