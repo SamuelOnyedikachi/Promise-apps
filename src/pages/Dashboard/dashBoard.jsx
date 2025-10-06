@@ -1,5 +1,5 @@
 import React from 'react';
-import First from '../../assets/firstImg.png';
+import First from '../../assets/firstimg.png';
 import SecondImg from '../../assets/image 4.png';
 import { useNavigate } from 'react-router-dom';
 import Vector from '../../assets/Vector.png';
@@ -91,8 +91,8 @@ const Dashboard = () => {
             {/* first card */}
             <div className="rounded-[10px] w-[100%] p-7 bg-[#262626] flex-1 justify-center">
               <img src={Vector} alt="vector" className="mx-auto py-3" />
-              <h2 className="text-[20px] text-[#DAA71F]">Paid Ads (PPC)</h2>
-              <h3 className="py-4 text-[15px]">
+              <h2 className="text-[18px] text-[#DAA71F]">Paid Ads (PPC)</h2>
+              <h3 className="py-4 text-[14px]">
                 Drive instant traffic and sales with laser-targeted ad
                 campaigns.
               </h3>
@@ -101,10 +101,10 @@ const Dashboard = () => {
             {/* second card */}
             <div className="rounded-[10px] w-[100%] p-7 bg-[#262626] flex-1 justify-center">
               <img src={Vector01} alt="vector" className="mx-auto py-3" />
-              <h2 className="text-[20px] text-[#DAA71F]">
+              <h2 className="text-[15.8px] text-[#DAA71F]">
                 Social Media Management
               </h2>
-              <h3 className="py-4 text-[15px]">
+              <h3 className="py-4 text-[14px]">
                 Turn followers into loyal fans with content that connects and
                 converts.
               </h3>
@@ -113,8 +113,8 @@ const Dashboard = () => {
             {/* third card */}
             <div className="rounded-[10px] w-[100%] p-7 bg-[#262626] flex-1 justify-center">
               <img src={Vector02} alt="vector" className="mx-auto py-3" />
-              <h2 className="text-[20px] text-[#DAA71F]">SEO Services</h2>
-              <h3 className="py-4 text-[15px]">
+              <h2 className="text-[18px] text-[#DAA71F]">SEO Services</h2>
+              <h3 className="py-4 text-[14px]">
                 Boost your search rankings and get found by the right people,
                 faster.
               </h3>
@@ -126,7 +126,7 @@ const Dashboard = () => {
               <h2 className="text-[15px] text-[#DAA71F]">
                 Video Production & Content Creation
               </h2>
-              <h3 className="py-3.5 text-[14px]">
+              <h3 className="py-3 text-[13px]">
                 Captivate your audience with powerful visuals and
                 scroll-stopping content
               </h3>
@@ -136,8 +136,8 @@ const Dashboard = () => {
             {/* fifth card */}
             <div className="rounded-[10px] w-[100%] p-7 bg-[#262626] flex-1 justify-center">
               <img src={Vector04} alt="vector" className="mx-auto py-3" />
-              <h2 className="text-[20px] text-[#DAA71F]">Digital Marketing</h2>
-              <h3 className="py-4 text-[15px]">
+              <h2 className="text-[18px] text-[#DAA71F]">Digital Marketing</h2>
+              <h3 className="py-3 text-[13px]">
                 We blend data and creativity to fuel your brand’s digital
                 growth.
               </h3>
@@ -146,8 +146,8 @@ const Dashboard = () => {
             {/* sixth card */}
             <div className="rounded-[10px] w-[100%] p-7 bg-[#262626] flex-1 justify-center">
               <img src={Vector05} alt="vector" className="mx-auto py-3" />
-              <h2 className="text-[20px] text-[#DAA71F]">Copywriting</h2>
-              <h3 className="py-4 text-[15px]">
+              <h2 className="text-[18px] text-[#DAA71F]">Copywriting</h2>
+              <h3 className="py-4 text-[13px]">
                 Crafting words that spark interest, build trust, and drive
                 action.
               </h3>
@@ -156,8 +156,8 @@ const Dashboard = () => {
             {/* seventh card */}
             <div className="rounded-[10px] w-[100%] p-7 bg-[#262626] flex-1 justify-center">
               <img src={Vector06} alt="vector" className="mx-auto py-3" />
-              <h2 className="text-[20px] text-[#DAA71F]">Web Design</h2>
-              <h3 className="py-4 text-[15px]">
+              <h2 className="text-[18px] text-[#DAA71F]">Web Design</h2>
+              <h3 className="py-4 text-[13px]">
                 Build sleek, responsive websites that wow visitors and win
                 customers.
               </h3>
@@ -166,14 +166,14 @@ const Dashboard = () => {
         </div>
       </section>
 
-      <section className="h-[50vh] max-w-6xl mx-auto bg-[url('/src/assets/bgback.png')] bg-cover bg-center ">
-        <div className="bg-[rgba(124,17,25,0.81)] h-[50vh] w-full max-w-6xl mx-auto bg-cover bg-center flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-8">
+      <section className="h-[70vh] bg-[url('/src/assets/bgback.png')] bg-cover bg-center">
+        <div className="h-[70vh] bg-[rgba(124,17,25,0.81)]  w-full  bg-cover bg-center flex flex-col md:flex-row items-center justify-between px-40">
           {/* Left Section */}
-          <div className="w-full md:w-1/2 text-center md:text-left">
-            <h1 className="font-semibold text-3xl sm:text-4xl md:text-5xl text-white leading-tight pb-4">
+          <div className="w-full text-left">
+            <h1 className="font-semibold text-4xl sm:text-4xl md:text-6xl text-white leading-tight pb-4">
               Launch Your Next Big Win Today!
             </h1>
-            <h2 className="font-poppins font-medium text-sm py-3 sm:text-base md:text-lg text-white/70">
+            <h2 className="font-poppins font-medium text-2xl py-3 sm:text-base md:text- text-white/70">
               From strategy to success, Get Result Agency is built to move your
               brand forward fast.
             </h2>
