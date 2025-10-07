@@ -9,7 +9,7 @@ import Vector03 from '../../assets/Vector 03.png';
 import Vector04 from '../../assets/Vector 04.png';
 import Vector05 from '../../assets/Vector 05.png';
 import Vector06 from '../../assets/Vector 06.png';
-
+import Trends from '../../assets/trend06.png';
 const Dashboard = () => {
   const navigate = useNavigate();
   const Click = () => navigate('/Login');
@@ -170,40 +170,107 @@ const Dashboard = () => {
         <div className="h-[70vh] bg-[rgba(124,17,25,0.81)]  w-full  bg-cover bg-center flex flex-col md:flex-row items-center justify-between px-40">
           {/* Left Section */}
           <div className="w-full text-left">
-            <h1 className="font-semibold text-4xl sm:text-4xl md:text-6xl text-white leading-tight pb-4">
-              Launch Your Next Big Win Today!
-            </h1>
-            <h2 className="font-poppins font-medium text-2xl py-3 sm:text-base md:text- text-white/70">
-              From strategy to success, Get Result Agency is built to move your
-              brand forward fast.
-            </h2>
-            <div className="mt-6">
+            <div className="mb-14">
+              <h1 className="font-semibold text-4xl sm:text-4xl md:text-6xl text-white leading-tight pb-4">
+                Launch Your Next Big Win Today!
+              </h1>
+              <h2 className="font-medium text-2xl py-2 sm:text-base md:text-2xl w-2xl text-white/50">
+                From strategy to success, Get Result Agency is built to move
+                your brand forward fast.
+              </h2>
+            </div>
+            <div className="text-center flex justify-left">
               <button
-                className="bg-[#DAA71F] text-black px-6 py-3 rounded-md text-sm sm:text-base font-medium hover:bg-[#a30b0b] hover:text-white transition duration-300"
+                className="bg-[#DAA71F] w-60 text-white px-6 py-3 rounded-md text-[16px] font-medium hover:bg-[#a30b0b]  hover:text-white transition"
                 onClick={Click}
               >
-                Let's Get Started
+                Lets Get Started
               </button>
             </div>
           </div>
 
           {/* Right Section */}
-          <div className="w-full md:w-1/2 flex justify-center mt-6 md:mt-0">
+          <div className="w-full md:w-1/2">
             <img
               src={SecondImg}
               alt="welcome"
-              className="w-[80%] md:w-[100%] h-auto object-contain"
+              className="w-[80%] md:w-[100%] h-auto relative top-15 left-5 object-contain"
             />
           </div>
         </div>
       </section>
-      <section className="h-[60vh] max-w-6xl mx-auto bg-[#fff] bg-cover bg-center grid py-15 justify-center px-15">
+      <section className=" py-20 text-center bg-[#ffffffe0] bg-cover bg-center grid gap-20 items-center px-50">
         <h1 className="text-center text-3xl text-[#000] font-bold">
           Top Trends
         </h1>
         {/* Cards trends */}
-        <div className="border border-black/20 rounded-lg">
-          <img src="" alt="" />
+        <div className='flex justify-between flex-1'>
+          <div className="border border-black/20 rounded-[10px] shadow-[inset_0_0_0_1000px_rgba(0,0,0,0.05)] grid md:w-[320px] text-black text-justify font-medium">
+            <div className="w-[100%] h-[100%] p-0 m-0">
+              <img src={Trends} className="w-[100%] h-[100%] " alt="" />
+            </div>
+            <div className="p-5">
+              <div>
+                <h2 className="font-semibold text-[15px] pb-3">
+                  How Professional Services Firms Can Use Podcasts To Connect
+                  With Leads
+                </h2>
+                <h3 className="text-[13px] pb-5 font-normal ">
+                  Many professional services firms do not have a marketing
+                  department or team.
+                </h3>
+              </div>
+              <div className="flex justify-between pt-5 text-[11px]">
+                <h5>November, 2025</h5>
+                <h5 className="text-red-600">Read More</h5>
+              </div>
+            </div>
+          </div>
+
+          {/* card 2 */}
+          <div className="border border-black/20 rounded-[10px] shadow-[inset_0_0_0_1000px_rgba(0,0,0,0.05)] grid md:w-[320px] text-black text-justify font-medium">
+            <div className="w-[100%] h-[100%] p-0 m-0">
+              <img src={Trends} className="w-[100%] h-[100%] " alt="" />
+            </div>
+            <div className="p-5">
+              <div>
+                <h2 className="font-semibold text-[15px] pb-3">
+                  How Professional Services Firms Can Use Podcasts To Connect
+                  With Leads
+                </h2>
+                <h3 className="text-[13px] pb-5 font-normal ">
+                  Many professional services firms do not have a marketing
+                  department or team.
+                </h3>
+              </div>
+              <div className="flex justify-between pt-5 text-[11px]">
+                <h5>November, 2025</h5>
+                <h5 className="text-red-600">Read More</h5>
+              </div>
+            </div>
+          </div>
+          {/* card 3 */}
+          <div className="border border-black/20 rounded-[10px] shadow-[inset_0_0_0_1000px_rgba(0,0,0,0.05)] grid md:w-[320px] text-black text-justify font-medium">
+            <div className="w-[100%] h-[100%] p-0 m-0">
+              <img src={Trends} className="w-[100%] h-[100%] " alt="" />
+            </div>
+            <div className="p-5">
+              <div>
+                <h2 className="font-semibold text-[15px] pb-3">
+                  How Professional Services Firms Can Use Podcasts To Connect
+                  With Leads
+                </h2>
+                <h3 className="text-[13px] pb-5 font-normal ">
+                  Many professional services firms do not have a marketing
+                  department or team.
+                </h3>
+              </div>
+              <div className="flex justify-between pt-5 text-[11px]">
+                <h5>November, 2025</h5>
+                <h5 className="text-red-600">Read More</h5>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section className="h-[70vh] max-w-6xl mx-auto bg-[url('/src/assets/firstbg.png')] bg-cover bg-center grid items-center justify-center px-15">
