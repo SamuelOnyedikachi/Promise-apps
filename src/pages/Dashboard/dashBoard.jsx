@@ -1,29 +1,28 @@
-import React from 'react';
-import First from './firstimg.png';
-import SecondImg from '../../assets/image 4.png';
-import { useNavigate } from 'react-router-dom';
-import Vector from '../../assets/Vector.png';
-import Vector01 from '../../assets/Vector 01.png';
-import Vector02 from '../../assets/Vector 02.png';
-import Vector03 from '../../assets/Vector 03.png';
-import Vector04 from '../../assets/Vector 04.png';
-import Vector05 from '../../assets/Vector 05.png';
-import Vector06 from '../../assets/Vector 06.png';
-import Trends from '../../assets/trend06.png';
+import React from 'react'
+import First from './firstimg.png'
+import SecondImg from '../../assets/image 4.png'
+import { useNavigate } from 'react-router-dom'
+import Vector from '../../assets/Vector.png'
+import Vector01 from '../../assets/Vector 01.png'
+import Vector02 from '../../assets/Vector 02.png'
+import Vector03 from '../../assets/Vector 03.png'
+import Vector04 from '../../assets/Vector 04.png'
+import Vector05 from '../../assets/Vector 05.png'
+import Vector06 from '../../assets/Vector 06.png'
+import Trends from '../../assets/trend06.png'
 const Dashboard = () => {
-  const navigate = useNavigate();
-  const Click = () => navigate('/Login');
+  const navigate = useNavigate()
+  const Click = () => navigate('/Login')
   return (
     <>
       <section className="h-[70vh] bg-[url('/src/assets/firstbg.png')] bg-cover bg-center grid items-center  px-50 pb-[10%]">
         <div className="flex flex-col md:flex-row items-center justify-between max-h-1 pt-55">
-          <div className="font-medium text-left w-[50%]">
+          <div className="font-medium text-left w-[60%]">
             <h1 className="text-[#DAA71F] text-xl sm:text-2xl md:text-4xl lg:text-[40px]">
-              Turn Clicks into Clients <br />
-              Let’s Grow Your Brand Together.
+              Turn Clicks into Clients Let’s Grow Your Brand Together.
             </h1>
 
-            <h2 className="my-8 w-[90%] font-normal text-xl lg:text-[20px] sm:text-base text-white/50">
+            <h2 className="my-5 w-[90%] font-normal text-xl lg:text-[15px] sm:text-base text-white/80">
               At Get Result Agency, we specialize in transforming online traffic
               into loyal customers through data-driven digital strategies and
               bold creative execution.
@@ -42,7 +41,7 @@ const Dashboard = () => {
           {/* Image + Border Section */}
           <div className="">
             <div className="border border-[#daa81ff3] shadow-[inset_0_0_0_1000px_rgba(0,0,0,0.4)] rounded-[20px] md:w-[320px] md:h-[335px] "></div>
-            <div className="absolute top-[15.8%] right-[8.3%]">
+            <div className="absolute top-[20.4%] right-[11.6%]">
               <img
                 src={First}
                 alt="welcome"
@@ -204,7 +203,7 @@ const Dashboard = () => {
           Top Trends
         </h1>
         {/* Cards trends */}
-        <div className='flex justify-between flex-1'>
+        <div className="flex justify-between flex-1">
           <div className="border border-black/20 rounded-[10px] shadow-[inset_0_0_0_1000px_rgba(0,0,0,0.05)] grid md:w-[320px] text-black text-justify font-medium">
             <div className="w-[100%] h-[100%] p-0 m-0">
               <img src={Trends} className="w-[100%] h-[100%] " alt="" />
@@ -277,7 +276,7 @@ const Dashboard = () => {
         <h1 className="text-center text-2xl font-bold">helloworld</h1>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default Dashboard;
+export default Dashboard
