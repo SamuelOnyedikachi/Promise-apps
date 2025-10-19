@@ -90,7 +90,7 @@ const Dashboard = () => {
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* All Services Section */}
       <section className="py-16 lg:py-24 bg-[#160303]">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-16">
