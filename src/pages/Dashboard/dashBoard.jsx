@@ -1,282 +1,297 @@
-import React from 'react'
-import First from './firstimg.png'
-import SecondImg from '../../assets/image 4.png'
-import { useNavigate } from 'react-router-dom'
-import Vector from '../../assets/Vector.png'
-import Vector01 from '../../assets/Vector 01.png'
-import Vector02 from '../../assets/Vector 02.png'
-import Vector03 from '../../assets/Vector 03.png'
-import Vector04 from '../../assets/Vector 04.png'
-import Vector05 from '../../assets/Vector 05.png'
-import Vector06 from '../../assets/Vector 06.png'
-import Trends from '../../assets/trend06.png'
+import React from 'react';
+import First from './firstimg.png';
+import SecondImg from '../../assets/image 4.png';
+import { useNavigate } from 'react-router-dom';
+import Vector from '../../assets/Vector.png';
+import Vector01 from '../../assets/Vector 01.png';
+import Vector02 from '../../assets/Vector 02.png';
+import Vector03 from '../../assets/Vector 03.png';
+import Vector04 from '../../assets/Vector 04.png';
+import Vector05 from '../../assets/Vector 05.png';
+import Vector06 from '../../assets/Vector 06.png';
+import Trends from '../../assets/trend06.png';
+
 const Dashboard = () => {
-  const navigate = useNavigate()
-  const Click = () => navigate('/Login')
+  const navigate = useNavigate();
+  const Click = () => navigate('/Login');
+
   return (
     <>
-      <section className="h-[70vh] bg-[url('/src/assets/firstbg.png')] bg-cover bg-center grid items-center  px-50 pb-[10%]">
-        <div className="flex flex-col md:flex-row items-center justify-between max-h-1 pt-55">
-          <div className="font-medium text-left w-[60%]">
-            <h1 className="text-[#DAA71F] text-xl sm:text-2xl md:text-4xl lg:text-[40px]">
-              Turn Clicks into Clients Let’s Grow Your Brand Together.
-            </h1>
-
-            <h2 className="my-5 w-[90%] font-normal text-xl lg:text-[15px] sm:text-base text-white/80">
-              At Get Result Agency, we specialize in transforming online traffic
-              into loyal customers through data-driven digital strategies and
-              bold creative execution.
-            </h2>
-
-            <div className="text-center md:text-left pt-10 rel">
-              <button
-                className="bg-[#DAA71F] w-60 text-white px-6 py-3 rounded-md text-[16px] font-medium hover:bg-[#a30b0b]  hover:text-white transition"
-                onClick={Click}
-              >
-                Lets Get Started
-              </button>
-            </div>
-          </div>
-
-          {/* Image + Border Section */}
-          <div className="">
-            <div className="border border-[#daa81ff3] shadow-[inset_0_0_0_1000px_rgba(0,0,0,0.4)] rounded-[20px] md:w-[320px] md:h-[335px] "></div>
-            <div className="absolute top-[20.4%] right-[11.6%]">
-              <img
-                src={First}
-                alt="welcome"
-                className="w-[100%] md:w-[60%] lg:w-[100%]  object-contain"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-30 border-b border-gray-400 text-center bg-[#0e0e0eaf] bg-cover bg-center grid items-center  px-50">
-        <h1 className="text-[32px] font-bold">
-          Who <span className="text-[#DAA71F]">We</span> Are
-        </h1>
-        <p className="text-center text-amber-50 flex-1 py-10 text-[20px]">
-          We’re not just another digital marketing firm — we’re your growth
-          partners. Our mission is simple: to turn your online presence into
-          real-world results. With a bold mix of data-driven strategies,
-          creative storytelling, and performance marketing, we help brands cut
-          through the noise, connect with their audience, and scale with
-          confidence.
-        </p>
-        <p className="text-center pb-7 text-amber-50 flex-1 text-[20px]">
-          From social media campaigns and SEO to paid ads and content strategy,
-          we bring passion, precision, and purpose to everything we do. Whether
-          you’re a startup or an established brand, we’re here to ignite your
-          growth and deliver the results your business deserves.
-        </p>
-
-        <div className="text-center flex justify-center pt-10 md:text-left">
-          <button
-            className="bg-[#DAA71F] w-60 text-white px-6 py-3 rounded-md text-[16px] font-medium hover:bg-[#a30b0b]  hover:text-white transition"
-            onClick={Click}
-          >
-            Lets Get Started
-          </button>
-        </div>
-      </section>
-
-      <section className="py-30 text-center bg-[#1603035e] bg-cover bg-center grid items-center px-50">
-        <h1 className="text-[32px] font-bold">
-          What <span className="text-[#DAA71F]">We</span> Are
-        </h1>
-        <div className="my-15 gap-10 grid justify-center items-center">
-          <div className="grid-cols-4 gap-15 grid justify-center items-center">
-            {/* first card */}
-            <div className="rounded-[10px] w-[100%] p-7 bg-[#262626] flex-1 justify-center">
-              <img src={Vector} alt="vector" className="mx-auto py-3" />
-              <h2 className="text-[18px] text-[#DAA71F]">Paid Ads (PPC)</h2>
-              <h3 className="py-4 text-[14px]">
-                Drive instant traffic and sales with laser-targeted ad
-                campaigns.
-              </h3>
-            </div>
-
-            {/* second card */}
-            <div className="rounded-[10px] w-[100%] p-7 bg-[#262626] flex-1 justify-center">
-              <img src={Vector01} alt="vector" className="mx-auto py-3" />
-              <h2 className="text-[15.8px] text-[#DAA71F]">
-                Social Media Management
-              </h2>
-              <h3 className="py-4 text-[14px]">
-                Turn followers into loyal fans with content that connects and
-                converts.
-              </h3>
-            </div>
-
-            {/* third card */}
-            <div className="rounded-[10px] w-[100%] p-7 bg-[#262626] flex-1 justify-center">
-              <img src={Vector02} alt="vector" className="mx-auto py-3" />
-              <h2 className="text-[18px] text-[#DAA71F]">SEO Services</h2>
-              <h3 className="py-4 text-[14px]">
-                Boost your search rankings and get found by the right people,
-                faster.
-              </h3>
-            </div>
-
-            {/* four card */}
-            <div className="rounded-[10px] w-[100%] p-7 bg-[#262626] flex-1 justify-center">
-              <img src={Vector03} alt="vector" className="mx-auto py-3" />
-              <h2 className="text-[15px] text-[#DAA71F]">
-                Video Production & Content Creation
-              </h2>
-              <h3 className="py-3 text-[13px]">
-                Captivate your audience with powerful visuals and
-                scroll-stopping content
-              </h3>
-            </div>
-          </div>
-          <div className="flex justify-center max-w-[70%] item-center mx-auto gap-10">
-            {/* fifth card */}
-            <div className="rounded-[10px] w-[100%] p-7 bg-[#262626] flex-1 justify-center">
-              <img src={Vector04} alt="vector" className="mx-auto py-3" />
-              <h2 className="text-[18px] text-[#DAA71F]">Digital Marketing</h2>
-              <h3 className="py-3 text-[13px]">
-                We blend data and creativity to fuel your brand’s digital
-                growth.
-              </h3>
-            </div>
-
-            {/* sixth card */}
-            <div className="rounded-[10px] w-[100%] p-7 bg-[#262626] flex-1 justify-center">
-              <img src={Vector05} alt="vector" className="mx-auto py-3" />
-              <h2 className="text-[18px] text-[#DAA71F]">Copywriting</h2>
-              <h3 className="py-4 text-[13px]">
-                Crafting words that spark interest, build trust, and drive
-                action.
-              </h3>
-            </div>
-
-            {/* seventh card */}
-            <div className="rounded-[10px] w-[100%] p-7 bg-[#262626] flex-1 justify-center">
-              <img src={Vector06} alt="vector" className="mx-auto py-3" />
-              <h2 className="text-[18px] text-[#DAA71F]">Web Design</h2>
-              <h3 className="py-4 text-[13px]">
-                Build sleek, responsive websites that wow visitors and win
-                customers.
-              </h3>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="h-[70vh] bg-[url('/src/assets/bgback.png')] bg-cover bg-center">
-        <div className="h-[70vh] bg-[rgba(124,17,25,0.81)]  w-full  bg-cover bg-center flex flex-col md:flex-row items-center justify-between px-40">
-          {/* Left Section */}
-          <div className="w-full text-left">
-            <div className="mb-14">
-              <h1 className="font-semibold text-4xl sm:text-4xl md:text-6xl text-white leading-tight pb-4">
-                Launch Your Next Big Win Today!
+      {/* Hero Section */}
+      <section className="min-h-[100vh] bg-[url('/src/assets/firstbg.png')] bg-cover bg-center flex items-center py-12 px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto max-w-7xl">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+            {/* Text Content */}
+            <div className="w-full lg:w-1/2 text-center lg:text-left">
+              <h1 className="text-[#DAA71F] text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] font-bold leading-tight mb-6">
+                Turn Clicks into Clients Let's Grow Your Brand Together.
               </h1>
-              <h2 className="font-medium text-2xl py-2 sm:text-base md:text-2xl w-2xl text-white/50">
-                From strategy to success, Get Result Agency is built to move
-                your brand forward fast.
+              <h2 className="text-white/80 text-base sm:text-lg md:text-xl lg:text-[18px] leading-relaxed mb-8 font-light">
+                At Get Result Agency, we specialize in transforming online
+                traffic into loyal customers through data-driven digital
+                strategies and bold creative execution.
               </h2>
+              <div className="flex justify-center lg:justify-start">
+                <button
+                  className="bg-[#DAA71F] hover:bg-[#b88a1a] text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                  onClick={Click}
+                >
+                  Let's Get Started
+                </button>
+              </div>
             </div>
-            <div className="text-center flex justify-left">
-              <button
-                className="bg-[#DAA71F] w-60 text-white px-6 py-3 rounded-md text-[16px] font-medium hover:bg-[#a30b0b]  hover:text-white transition"
-                onClick={Click}
+
+            {/* Image Section */}
+            <div className="w-full lg:w-2/5 relative flex justify-center">
+              <div className="border-2 border-[#daa81ff3] rounded-2xl w-[65%] max-w-md lg:max-w-lg xl:max-w-xl aspect-square bg-black/40 backdrop-blur-sm"></div>
+              <div className="absolute top-11/26 left-4/7 transform -translate-x-1/2 -translate-y-1/2 w-4/5">
+                <img
+                  src={First}
+                  alt="Digital Marketing Solutions"
+                  className="w h-auto object-contain rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Who We Are Section */}
+      <section className="py-16 lg:py-24 border-b border-gray-600 bg-[#0e0e0e]">
+        <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-12">
+            Who <span className="text-[#DAA71F]">We</span> Are
+          </h1>
+          <div className="space-y-8">
+            <p className="text-amber-50 text-lg sm:text-xl leading-relaxed text-center font-light">
+              We're not just another digital marketing firm — we're your growth
+              partners. Our mission is simple: to turn your online presence into
+              real-world results. With a bold mix of data-driven strategies,
+              creative storytelling, and performance marketing, we help brands
+              cut through the noise, connect with their audience, and scale with
+              confidence.
+            </p>
+            <p className="text-amber-50 text-lg sm:text-xl leading-relaxed text-center font-light">
+              From social media campaigns and SEO to paid ads and content
+              strategy, we bring passion, precision, and purpose to everything
+              we do. Whether you're a startup or an established brand, we're
+              here to ignite your growth and deliver the results your business
+              deserves.
+            </p>
+          </div>
+          <div className="flex justify-center mt-12">
+            <button
+              className="bg-[#DAA71F] hover:bg-[#b88a1a] text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105"
+              onClick={Click}
+            >
+              Let's Get Started
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="py-16 lg:py-24 bg-[#160303]">
+        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-16">
+            What <span className="text-[#DAA71F]">We</span> Do
+          </h1>
+
+          {/* First Row of Services */}
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 mb-8">
+            {[
+              {
+                icon: Vector,
+                title: 'Paid Ads (PPC)',
+                description:
+                  'Drive instant traffic and sales with laser-targeted ad campaigns.',
+              },
+              {
+                icon: Vector01,
+                title: 'Social Media Management',
+                description:
+                  'Turn followers into loyal fans with content that connects and converts.',
+              },
+              {
+                icon: Vector02,
+                title: 'SEO Services',
+                description:
+                  'Boost your search rankings and get found by the right people, faster.',
+              },
+              {
+                icon: Vector03,
+                title: 'Video Production & Content Creation',
+                description:
+                  'Captivate your audience with powerful visuals and scroll-stopping content',
+              },
+            ].map((service, index) => (
+              <div
+                key={index}
+                className="rounded-2xl p-6 bg-[#262626] hover:bg-[#333333] transition-all duration-300 transform hover:-translate-y-2 shadow-lg"
               >
-                Lets Get Started
-              </button>
-            </div>
+                <img
+                  src={service.icon}
+                  alt={service.title}
+                  className="mx-auto mb-4 w-12 h-12"
+                />
+                <h2 className="text-lg font-semibold text-[#DAA71F] text-center mb-4 leading-tight">
+                  {service.title}
+                </h2>
+                <h3 className="text-sm text-gray-300 text-center leading-relaxed">
+                  {service.description}
+                </h3>
+              </div>
+            ))}
           </div>
 
-          {/* Right Section */}
-          <div className="w-full md:w-1/2">
-            <img
-              src={SecondImg}
-              alt="welcome"
-              className="w-[80%] md:w-[100%] h-auto relative top-15 left-5 object-contain"
+          {/* Second Row of Services */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              {
+                icon: Vector04,
+                title: 'Digital Marketing',
+                description:
+                  "We blend data and creativity to fuel your brand's digital growth.",
+              },
+              {
+                icon: Vector05,
+                title: 'Copywriting',
+                description:
+                  'Crafting words that spark interest, build trust, and drive action.',
+              },
+              {
+                icon: Vector06,
+                title: 'Web Design',
+                description:
+                  'Build sleek, responsive websites that wow visitors and win customers.',
+              },
+            ].map((service, index) => (
+              <div
+                key={index}
+                className="rounded-2xl p-6 bg-[#262626] hover:bg-[#333333] transition-all duration-300 transform hover:-translate-y-2 shadow-lg"
+              >
+                <img
+                  src={service.icon}
+                  alt={service.title}
+                  className="mx-auto mb-4 w-12 h-12"
+                />
+                <h2 className="text-lg font-semibold text-[#DAA71F] text-center mb-4">
+                  {service.title}
+                </h2>
+                <h3 className="text-sm text-gray-300 text-center leading-relaxed">
+                  {service.description}
+                </h3>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="min-h-[70vh] bg-[url('/src/assets/bgback.png')] bg-cover bg-center">
+        <div className="min-h-[70vh] bg-[rgba(124,17,25,0.81)] w-full flex items-center py-12">
+          <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+              {/* Text Content */}
+              <div className="w-full lg:w-1/2 text-center lg:text-left">
+                <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white leading-tight mb-6">
+                  Launch Your Next Big Win Today!
+                </h1>
+                <h2 className="font-medium text-xl sm:text-2xl text-white/80 leading-relaxed mb-8">
+                  From strategy to success, Get Result Agency is built to move
+                  your brand forward fast.
+                </h2>
+                <div className="flex justify-center lg:justify-start">
+                  <button
+                    className="bg-[#DAA71F] hover:bg-[#b88a1a] text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105"
+                    onClick={Click}
+                  >
+                    Let's Get Started
+                  </button>
+                </div>
+              </div>
+
+              {/* Image */}
+              <div className="w-full lg:w-2/5 flex justify-center">
+                <img
+                  src={SecondImg}
+                  alt="Success Strategy"
+                  className="w-full max-w-md lg:max-w-lg xl:max-w-xl h-auto object-contain transform hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Trends Section */}
+      <section className="py-16 lg:py-24 bg-white">
+        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center text-black mb-16">
+            Top Trends
+          </h1>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[1, 2, 3].map((item) => (
+              <div
+                key={item}
+                className="border border-gray-200 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white"
+              >
+                <div className="w-full h-48 overflow-hidden">
+                  <img
+                    src={Trends}
+                    alt="Marketing Trends"
+                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
+                <div className="p-6">
+                  <h2 className="font-semibold text-lg text-black mb-3 leading-tight">
+                    How Professional Services Firms Can Use Podcasts To Connect
+                    With Leads
+                  </h2>
+                  <h3 className="text-gray-600 text-sm mb-6 leading-relaxed">
+                    Many professional services firms do not have a marketing
+                    department or team.
+                  </h3>
+                  <div className="flex justify-between items-center pt-4 border-t border-gray-100">
+                    <h5 className="text-gray-500 text-xs font-medium">
+                      November, 2025
+                    </h5>
+                    <button className="text-red-600 hover:text-red-700 text-xs font-semibold transition-colors duration-200">
+                      Read More →
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Newsletter/Contact Section */}
+      <section className="py-16 lg:py-24 bg-gradient-to-br from-gray-900 to-black">
+        <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6">
+            Ready to Transform Your Digital Presence?
+          </h2>
+          <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
+            Join hundreds of successful brands that trust us to drive their
+            growth.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="flex-1 px-4 py-3 rounded-lg border border-gray-600 bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#DAA71F]"
             />
+            <button className="bg-[#DAA71F] hover:bg-[#b88a1a] text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
+              Get Started
+            </button>
           </div>
         </div>
-      </section>
-      <section className=" py-20 text-center bg-[#ffffffe0] bg-cover bg-center grid gap-20 items-center px-50">
-        <h1 className="text-center text-3xl text-[#000] font-bold">
-          Top Trends
-        </h1>
-        {/* Cards trends */}
-        <div className="flex justify-between flex-1">
-          <div className="border border-black/20 rounded-[10px] shadow-[inset_0_0_0_1000px_rgba(0,0,0,0.05)] grid md:w-[320px] text-black text-justify font-medium">
-            <div className="w-[100%] h-[100%] p-0 m-0">
-              <img src={Trends} className="w-[100%] h-[100%] " alt="" />
-            </div>
-            <div className="p-5">
-              <div>
-                <h2 className="font-semibold text-[15px] pb-3">
-                  How Professional Services Firms Can Use Podcasts To Connect
-                  With Leads
-                </h2>
-                <h3 className="text-[13px] pb-5 font-normal ">
-                  Many professional services firms do not have a marketing
-                  department or team.
-                </h3>
-              </div>
-              <div className="flex justify-between pt-5 text-[11px]">
-                <h5>November, 2025</h5>
-                <h5 className="text-red-600">Read More</h5>
-              </div>
-            </div>
-          </div>
-
-          {/* card 2 */}
-          <div className="border border-black/20 rounded-[10px] shadow-[inset_0_0_0_1000px_rgba(0,0,0,0.05)] grid md:w-[320px] text-black text-justify font-medium">
-            <div className="w-[100%] h-[100%] p-0 m-0">
-              <img src={Trends} className="w-[100%] h-[100%] " alt="" />
-            </div>
-            <div className="p-5">
-              <div>
-                <h2 className="font-semibold text-[15px] pb-3">
-                  How Professional Services Firms Can Use Podcasts To Connect
-                  With Leads
-                </h2>
-                <h3 className="text-[13px] pb-5 font-normal ">
-                  Many professional services firms do not have a marketing
-                  department or team.
-                </h3>
-              </div>
-              <div className="flex justify-between pt-5 text-[11px]">
-                <h5>November, 2025</h5>
-                <h5 className="text-red-600">Read More</h5>
-              </div>
-            </div>
-          </div>
-          {/* card 3 */}
-          <div className="border border-black/20 rounded-[10px] shadow-[inset_0_0_0_1000px_rgba(0,0,0,0.05)] grid md:w-[320px] text-black text-justify font-medium">
-            <div className="w-[100%] h-[100%] p-0 m-0">
-              <img src={Trends} className="w-[100%] h-[100%] " alt="" />
-            </div>
-            <div className="p-5">
-              <div>
-                <h2 className="font-semibold text-[15px] pb-3">
-                  How Professional Services Firms Can Use Podcasts To Connect
-                  With Leads
-                </h2>
-                <h3 className="text-[13px] pb-5 font-normal ">
-                  Many professional services firms do not have a marketing
-                  department or team.
-                </h3>
-              </div>
-              <div className="flex justify-between pt-5 text-[11px]">
-                <h5>November, 2025</h5>
-                <h5 className="text-red-600">Read More</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="h-[70vh] max-w-6xl mx-auto bg-[url('/src/assets/firstbg.png')] bg-cover bg-center grid items-center justify-center px-15">
-        <h1 className="text-center text-2xl font-bold">helloworld</h1>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Dashboard
+export default Dashboard;
